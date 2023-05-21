@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerThemeLight" >
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:textColorPrimary">@color/purple_500</item>
+        <item name="android:textColorSecondary">@color/purple_700</item>
+        <item name="android:textColorTertiary">@color/teal_200</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/teal_200</item>
+    </style>
+</resources>

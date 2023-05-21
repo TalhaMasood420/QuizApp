@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Student.SingleQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".Student.SingleThematic"
+            android:exported="false" />
+        <activity
+            android:name=".Student.SingleSubject"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CreateQuestionTwo"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CreateThematic"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CreateQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CreateGrade"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CreateSubject"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ApproveRequests"
+            android:exported="false" />
+        <activity
+            android:name=".Student.SingleGrade"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminSignIn"
+            android:exported="false" />
+        <activity
+            android:name=".Student.AddGrade"
+            android:exported="false" />
+        <activity
+            android:name=".Student.HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Student.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Student.SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f5ff"
+    tools:context=".Admin.AdminPage">
+
+    <TextView
+        android:id="@+id/adminPageHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome Back"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_logout_24" >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminPageHeading"
+        android:id="@+id/stats"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e0e0fb"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Total Students"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalStudentsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fce2db"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/awaitingRequests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Total Requests"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalRequestsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/requestsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13dp"
+        android:text="Requests"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="#4dd3d8"
+        android:layout_below="@+id/stats"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="80dp"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gradeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13dp"
+        android:text="Add Grade"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="#4dd3d8"
+        android:layout_below="@+id/requestsButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="80dp"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/subjectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13dp"
+        android:text="Add Subject"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="#4dd3d8"
+        android:layout_below="@+id/gradeButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="80dp"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/thematicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13dp"
+        android:text="Add Thematic Area"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="#4dd3d8"
+        android:layout_below="@+id/subjectButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="80dp"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/questionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="13dp"
+        android:text="Add Question"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:backgroundTint="#4dd3d8"
+        android:layout_below="@+id/thematicButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="80dp"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

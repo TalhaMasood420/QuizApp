@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f5ff"
+    tools:context=".Student.SingleQuestion">
+
+
+    <TextView
+        android:id="@+id/questionBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:text="Question"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionBox"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/answer1Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:inputType="textLongMessage|textMultiLine"
+                android:textColor="@color/black"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/answer2Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:inputType="textLongMessage|textMultiLine"
+                android:textColor="@color/black"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/answer3Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:inputType="textLongMessage|textMultiLine"
+                android:textColor="@color/black"
+                android:text="Answer 3" />
+
+            <RadioButton
+                android:id="@+id/answer4Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:inputType="textLongMessage|textMultiLine"
+                android:textColor="@color/black"
+                android:text="Answer 4" />
+
+        </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="13dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:paddingHorizontal="60dp"
+        app:backgroundTint="#4dd3d8"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</RelativeLayout>

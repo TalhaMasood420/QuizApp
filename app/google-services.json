@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "429058042346",
+    "project_id": "quizzer-ebdcc",
+    "storage_bucket": "quizzer-ebdcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429058042346:android:a2f291dc1cd308dd956a93",
+        "android_client_info": {
+          "package_name": "com.example.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429058042346-3d8qg3khdogd36hm3oqbm73oa3l4d8ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcWfD8eq96JfzxnDrKu_a_HMF-mdUqI3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429058042346-3d8qg3khdogd36hm3oqbm73oa3l4d8ql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
